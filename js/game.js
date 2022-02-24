@@ -16,6 +16,12 @@ let food = {
     y: Math.floor((Math.random() * 15 + 1)) * box,
 };
 
+let snake = [];
+snake[0] = {
+    x: 9 * box,
+    y: 10 * box
+};
+
 function drawGame() {
     ctx.drawImage(ground, 0, 0);
 }
