@@ -25,5 +25,10 @@ snake[0] = {
 function drawGame() {
     ctx.drawImage(ground, 0, 0);
     ctx.drawImage(foodImg, food.x, food.y);
+
+    for(let i = 0; i < snake.length; i++) {
+        ctx.fillStyle = "green";
+        ctx.fillRect(snake[i].x, snake [i].y, box, box);
+    }
 }
 let game = setInterval(drawGame, 100);
