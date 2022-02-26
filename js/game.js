@@ -22,6 +22,12 @@ snake[0] = {
     y: 10 * box
 };
 
+document.addEventListener("keydown",direction);
+
+function direction() {
+    if
+}
+
 function drawGame() {
     ctx.drawImage(ground, 0, 0);
     ctx.drawImage(foodImg, food.x, food.y);
