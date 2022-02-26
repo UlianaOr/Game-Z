@@ -31,6 +31,10 @@ function direction(event) {
     dir = "left";
     else if (event.keyCode == 38)
     dir = "up";
+    else if (event.keyCode == 39)
+    dir = "right";
+    else if (event.keyCode == 40)
+    dir = "down";
 
 }
 
