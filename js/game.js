@@ -57,6 +57,9 @@ function drawGame() {
     snake.pop();
 
     if (dir == "left") snakeX -= box;
+    if (dir == "right") snakeX += box;
+    if (dir == "up") snakeY -= box;
+    if (dir == "down") snakeY += box;
 }
 
 
