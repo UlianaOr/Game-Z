@@ -49,7 +49,14 @@ function drawGame() {
 
     ctx.fillStyle = "red";
     ctx.font = "50px Arial";
-    ctx.fillText(score, box * 2.5, box * 1.5);
+    ctx.fillText(score, box * 2.5, box * 1.7);
+
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+
+    snake.pop();
+
+    if (dir == "left") snakeX -= box;
 }
 
 
