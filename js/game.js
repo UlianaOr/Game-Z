@@ -13,7 +13,7 @@ let score = 0;
 
 let food = {
     x: Math.floor((Math.random() * 17 + 1)) * box,
-    y: Math.floor((Math.random() * 15 + 1)) * box,
+    y: Math.floor((Math.random() * 15 + 3)) * box,
 };
 
 let snake = [];
@@ -56,9 +56,13 @@ function drawGame() {
 
     if (snakeX == food.x && snakeY == food.y) {
         score++;
-        let food = {
-            
-        }
+         food = {
+            x: Math.floor((Math.random() * 17 + 1)) * box,
+            y: Math.floor((Math.random() * 15 + 1)) * box,
+
+        };
+    } else {
+        snake.pop ();
     }
 
     snake.pop();
